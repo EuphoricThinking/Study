@@ -14,9 +14,6 @@ def logarytmowane(masa_log, rzezba_w_cm):
     plt.legend()
     plt.show()
 
-def bez_logarytmu(masa, rzezba):
-    plt.plot(rzezba, masa, 'bX-')
-    plt.show()
 
 if __name__ == '__main__':
     masa_w_kDa = [200.0, 116.0, 97.0, 66.0, 45.0, 31.0, 21.0]
@@ -33,5 +30,4 @@ if __name__ == '__main__':
     text = 'Albumina 1,55 cm: ' + str(round(pow(10, albumina), 2)) + ', ciężki łańcuch 2 cm: ' + str(round(pow(10, ciezki_lancuch), 2)) + ', lekki łańcuch: ' + str(round(pow(10, lekki_lancuch)))
     logarytmowane(masa_log, rzezba_w_cm)
     print(text)
-    plt.savefig('/home/heheszek/Downloads/Krzywa_kalibracyjna.png')
 
